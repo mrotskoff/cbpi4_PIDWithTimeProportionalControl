@@ -158,36 +158,3 @@ class PIDArduino(object):
 
 def setup(cbpi):
     cbpi.plugin.register("PIDWithTimeProportionalControl", PIDWithTimeProportionalControl)
-
-'''
-period = 2
-p = 10
-i = 1
-d = 5
-pid = PIDArduino(period, p, i, d, 0, 100)
-for num in range(100, 160):
-    print("sensor val: {}".format(num))
-    print("pid calc:   {}". format(pid.calc(num, 150)))
-    time.sleep(period)
-for num in range(160, 140, -1):
-    print("sensor val: {}".format(num))
-    print("pid calc:   {}". format(pid.calc(num, 150)))
-    time.sleep(period)
-for num in range(140, 155):
-    print("sensor val: {}".format(num))
-    print("pid calc:   {}". format(pid.calc(num, 150)))
-    time.sleep(period)
-for num in range(155, 145, -1):
-    print("sensor val: {}".format(num))
-    print("pid calc:   {}". format(pid.calc(num, 150)))
-    time.sleep(period)
-for num in range(145, 151):
-    print("sensor val: {}".format(num))
-    print("pid calc:   {}". format(pid.calc(num, 150)))
-    time.sleep(period)
-for num in range(151, 148, -1):
-    print("sensor val: {}".format(num))
-    print("pid calc:   {}". format(pid.calc(num, 150)))
-    time.sleep(period)
-'''
-
